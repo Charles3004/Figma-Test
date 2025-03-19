@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #ff7f35;
+    margin: 0;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.left-image {
+    width: 585px;
+    height: 100vh; /* Full screen height */
+    background: url('Left.png') no-repeat center center/cover;
+    position: fixed; /* Fixes positioning */
+    left: 0;
+    padding: 200px 100px;
+    gap: 16px;
+}
+
+.content {
+    position: relative;
+    width: 600px;
+    height: 100vh; /* Full screen height */
+}
+
+.main-image {
+    width: 100%;
+    height: 100vh; /* Full screen height */
+    display: block;
+}
+
+.overlay-image {
+    position: absolute;
+    width: 200px; 
+    bottom: -45px;
+    right: -35px;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.container {
+    background: white;
+    padding: 55px;
+    width: 934px;
+    height: 100vh; /* Full screen height */
+    border-radius: 0; /* Reset other corners */
+    border-top-left-radius: 16.5%; /* Apply 16.5% curve to top-left */
+    box-shadow: 0 0 10px #ff8750(0.1);
+    text-align: center;
+    overflow-y: auto; /* Prevent overflow */
+}
+
+.input-field {
+    width: 100%;
+    padding: 16px 32px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    text-align: left;
+}
+
+.btn {
+    width: 534px;
+    height: 60px;
+    padding: 16px 32px;
+    background: #fed7aa;
+    color: #fcaf7a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.btn:hover {
+    background: #fcaf7a;
+}
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: white;
+    color: black !important; /* Change to visible text color */
+    padding: 12px 20px;
+    font-size: 16px; /* Make text readable */
+    white-space: nowrap; /* Prevent text from breaking */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.google-btn i {
+    font-size: 18px; /* Reduce icon size */
+    margin-right: 8px; /* Create space between icon and text */
+}
+
+.google-btn:hover {
+    background: white;
+}
+
+#terms {
+    display: flex;
+    align-items: center; /* Aligns checkbox with text */
+    font-size: 14px;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevents text from wrapping to the next line */
+    white-space: nowrap; /* Ensures text stays on one line */
+}
+
+#terms input {
+    width: 14px; /* Adjust checkbox size */
+    height: 14px;
+    margin: 0; /* Removes unnecessary spacing */
+    flex-shrink: 0; /* Prevents checkbox from resizing */
+}
+
+.login-link {
+    margin-top: 10px;
+    display: block;
+}
+
+.create-account {
+    font: Telegraf;
+    width: 800;
+    size: 36px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    align-self: center;
+    color: #ff7f35;
+}
+.input-container {
+    position: relative;
+    width: 70%;
+    max-width: 450px;
+    margin-bottom: 15px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ff9f68;
+    font-size: 18px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+a {
+    color: #ff9f68; /* Change to desired color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    color: #fcaf7a; /* Change color on hover */
+    text-decoration: underline; /* Optional: Add underline on hover */
+}
+a, .terms-symbol {
+    color: #ff9f68; /* Same color as links */
+    font-weight: bold; /* Optional: Make it bold */
+}
+
+a:hover, .terms-symbol:hover {
+    color: #fcaf7a; /* Same hover color as links */
+}

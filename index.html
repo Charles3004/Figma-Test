@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <!-- <link rel="stylesheet" href="https://icons8.com/icon/17949/google"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="left-image"></div>
+
+    <div class="content">
+        <img src="left.png/New Left.png" alt="Main Image" class="main-image">
+        <img src="left.png/left2.png" alt="Overlay Image" class="overlay-image">
+    </div>
+
+    
+        <div class="container">
+            <div class="input-container">
+                <h2 class="create-account">Create Account</h2>
+                <p>or sign up with</p>
+            </div>
+            <div class="input-container">
+                <button class="btn google-btn">
+                    <img src="left.png/google-icon.png" alt="Google Icon" class="google-icon"> 
+                Sign in with Google</button>
+                <p>or use your email for registration:</p>
+            </div>
+    
+            <form id="registerForm">
+                <div class="input-container">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" class="input-field" placeholder="Full Name / Company Name">
+                    <p class="error" id="nameError"></p>
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" class="input-field" placeholder="Email Address">
+                    <p class="error" id="emailError"></p>
+                </div>
+                
+                <div class="input-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" class="input-field" placeholder="Password">
+                    <p class="error" id="passwordError"></p>
+                </div>  
+          
+                <div class="input-container">
+                    <p id="terms">
+                        <input type="checkbox" id="terms">
+                        <label for="terms">
+                            I agree to the 
+                            <a href="#">Terms of Service</a> 
+                            <span class="terms-symbol">&</span> 
+                            <a href="#">Privacy Policy</a>.
+                        </label>                   
+                    </p>               
+                    <p class="error" id="termsError"></p>
+                </div>
+    
+                <div class="input-container">
+                    <button type="submit" class="btn">Create Account</button>
+                </div>
+            </form>
+    
+            <div class="input-container">
+                <p class="terms">By clicking the button above, you agree to our Terms of Service and Privacy Policy.</p>
+    
+                <p class="login-link">Already have an account? <a href="#">Login</a></p>
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
